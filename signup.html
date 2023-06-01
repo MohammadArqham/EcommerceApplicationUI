@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/add_cource.css">
+    <title>sign up</title>
+</head>
+<body>
+    <div class="container">
+        <h1>sign up</h1>
+        <form action="http://localhost:8080/addOneFormData" method="post" enctype="multipart/form-data">
+
+            username: <input type="text" name="username" >
+            fullname: <input type="text" name="fullname" >
+            location: <input type="text"   name="location" id="">
+            email: <input type="email" name="email" id="">
+            phoneNo: <input type="text" name="phoneNo" id="">
+           about: <input type="text" name="about">
+            <!-- tell us in detail: <textarea name="" name="discription" placeholder="Detailed discription" id="" cols="30" rows="10"></textarea> -->
+            Select your image :<input class="btn" type="file" name="image" value="select the image" id="">
+            password: <input type="password" name="password" id="">
+            
+             
+            <!-- Select type: <select name="category" id="">
+                <option value="art">buyer</option>
+                <option value="knowledge">seller</option>
+                <option value="outher">both </option>
+            </select> -->
+            <div>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </div>
+        
+        </form>
+    </div>
+</body>
+</html>
